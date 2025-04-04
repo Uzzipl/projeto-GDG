@@ -46,5 +46,5 @@
 
 # Autores
 
-|  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/170525752?s=400&v=4" width=115><br><sub>Uzires Portugal Laureano</sub>](https://github.com/Uzzipl) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/199308355?v=4" width=115><br><sub>Eder Henrique</sub>](https://github.com/THxS2) |
+|  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/170525752?s=400&v=4" width=115><br><sub>Uzires Portugal Laureano</sub>](https://github.com/Uzzipl) |  [<img loading="lazy" src="https://avatars.githubusercontent.com/u/199308355?v=4" width=115><br><sub>Arthur Felipe</sub>](https://github.com/THxS2) |
 | :---: | :---: |
