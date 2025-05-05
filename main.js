@@ -107,3 +107,31 @@ document.addEventListener('DOMContentLoaded', () => {
     setupMapLoading();
 });
 
+
+// Menu Mobile
+function setupMobileMenu() {
+    const mobileBtn = document.createElement('button');
+    mobileBtn.className = 'mobile-menu-btn';
+    mobileBtn.innerHTML = '☰';
+    mobileBtn.addEventListener('click', () => {
+        document.querySelector('nav').classList.toggle('active');
+    });
+    
+    const header = document.querySelector('header');
+    header.insertBefore(mobileBtn, header.querySelector('nav'));
+}
+
+// Loading do Mapa
+function setupMapLoading() {
+    const mapContainer = document.querySelector('#location');
+    const iframe = mapContainer.querySelector('iframe');
+    const loadingDiv = document.createElement('div');
+    loadingDiv.className = 'map-loading';
+    loadingDiv.innerHTML = '<div class="spinner"></div>';
+    
+    mapContainer.insertBefore(loadingDiv, iframe);
+    
+    iframe.addEventListener('load', () => {
+        loadingDiv.style.display = 'none';
+    });
+}
