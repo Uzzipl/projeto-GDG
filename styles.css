@@ -18,4 +18,20 @@
     --text-color: #64ffda;
     --primary-color: #172a45;
     --secondary-color: #1e4069;
+}body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s;
+}
+
+.section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.active {
+    display: block;
 }
