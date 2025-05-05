@@ -11,6 +11,31 @@
     <div id="terminal-animation">
         <div id="terminal-content"></div>
     </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <header>
+            <h1>GDG Tech Conference 2024</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#speakers">Palestrantes</a>
+                <a href="#location">Localização</a>
+                <button id="theme-toggle">Alternar Tema</button>
+            </nav>
+        </header>
+
+        <section id="home" class="section active">
+            <h2>Bem-vindo ao GDG Tech Conference</h2>
+            <p>Evento anual de tecnologia com as últimas tendências em TI</p>
+            <button class="cta-button" onclick="window.open('https://gdg.londrina.dev/?fbclid=PAZXh0bgNhZW0CMTEAAadobH-vQ5Nnphi_hzr0NPFj5-WRuRS0yh9ptEobm7LeuDqWWV22UYbqqHFl9w_aem_cibXhTt4FBrGJr25ftVxiA', '_blank')">
+                Inscreva-se Agora
+            </button>
+        </section>
+
+        <section id="speakers" class="section">
+            <div class="speakers-grid" id="speakers-container"></div>
+        </section>
+
     <script src="main.js" defer></script>
 </body>
 </html>
