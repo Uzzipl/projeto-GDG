@@ -14,3 +14,13 @@ function typeWriter(text, i = 0) {
         }
     }
 }
+
+// Evento para entrar na Home
+function enterSite() {
+    document.getElementById('terminal-animation').remove();
+    document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+    });
+    document.getElementById('home').classList.add('active');
+}
+
