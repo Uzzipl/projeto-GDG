@@ -24,3 +24,10 @@ function enterSite() {
     document.getElementById('home').classList.add('active');
 }
 
+// Alternar Tema
+document.getElementById('theme-toggle').addEventListener('click', () => {
+    const currentTheme = document.body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.body.setAttribute('data-theme', newTheme);
+});
+
