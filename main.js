@@ -31,3 +31,40 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
     document.body.setAttribute('data-theme', newTheme);
 });
 
+// Palestrantes
+const speakers = [
+    {
+        name: "Linus Torvalds",
+        bio: "Criador do Linux e Git",
+        photo: "https://upload.wikimedia.org/wikipedia/commons/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg",
+        talk: "O futuro dos sistemas open-source",
+        details: "Pioneiro no desenvolvimento de sistemas open-source, Linus compartilhará sua visão sobre o futuro do desenvolvimento colaborativo e como o Linux continua a evoluir."
+    },
+    {
+        name: "Tim Berners-Lee",
+        bio: "Inventor da World Wide Web",
+        photo: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg",
+        talk: "Web 3.0 e o futuro da internet",
+        details: "O pai da web discute os próximos passos na evolução da internet, os desafios de privacidade e sua visão para uma web mais descentralizada."
+    },
+    {
+        name: "Sundar Pichai",
+        bio: "CEO do Google e Alphabet",
+        photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Sundar_pichai.png/640px-Sundar_pichai.png",
+        talk: "Inteligência Artificial e o futuro do Google",
+        details: "O líder do Google compartilha como a IA está moldando os produtos do Google e o que esperar nos próximos anos de inovação tecnológica."
+    }
+    
+];
+function createSpeakerCard(speaker) {
+    const card = document.createElement('div');
+    card.className = 'speaker-card';
+    card.innerHTML = `
+        <h3>${speaker.name}</h3>
+        <p>${speaker.bio}</p>
+        <p><strong>Palestra:</strong> ${speaker.talk}</p>
+    `;
+    card.addEventListener('click', () => showSpeakerDetails(speaker));
+    return card;
+}
+
