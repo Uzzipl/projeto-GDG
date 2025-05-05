@@ -35,3 +35,26 @@
 .active {
     display: block;
 }
+#terminal-animation {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #00ff00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.terminal-text {
+    font-size: 2em;
+    border-right: 2px solid #00ff00;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
