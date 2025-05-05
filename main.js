@@ -68,3 +68,42 @@ function createSpeakerCard(speaker) {
     return card;
 }
 
+// função showSpeakerDetails
+function showSpeakerDetails(speaker) {
+    const detail = document.createElement('div');
+    detail.className = 'speaker-detail';
+    detail.innerHTML = `
+        <div class="speaker-content">
+            <button class="close-btn">×</button>
+            <img src="${speaker.photo}" alt="${speaker.name}">
+            <h2>${speaker.name}</h2>
+            <p class="speaker-bio">${speaker.bio}</p>
+            <h3>Palestra: ${speaker.talk}</h3>
+            <p class="speaker-details">${speaker.details}</p>
+        </div>
+    `;
+    
+    detail.querySelector('.close-btn').addEventListener('click', () => {
+        detail.remove();
+    });
+    
+    document.body.appendChild(detail);
+    setTimeout(() => detail.classList.add('active'), 10);
+}
+
+
+// Inicialização 
+document.addEventListener('DOMContentLoaded', () => {
+    typeWriter(messages[0]);
+    document.addEventListener('keypress', enterSite);
+    document.addEventListener('click', enterSite);
+    
+    const speakersContainer = document.getElementById('speakers-container');
+    speakers.forEach(speaker => {
+        speakersContainer.appendChild(createSpeakerCard(speaker));
+    });
+    
+    setupMobileMenu();
+    setupMapLoading();
+});
+
