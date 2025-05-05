@@ -158,3 +158,8 @@ nav a:hover {
     width: 200px;
     height: 200px;
 }
+@media (max-width: 768px) {
+    .terminal-text { font-size: 1.5em; }
+    nav { flex-direction: column; }
+    .speakers-grid { grid-template-columns: 1fr; }
+}
