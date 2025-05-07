@@ -60,7 +60,7 @@ const speakers = [
     {
         name: "Satya Nadella",
         bio: "CEO da Microsoft",
-        photo: "https://upload.wikimedia.org/wikipedia/commons/7/76/Satya_Nadella.jpg",
+        photo: "images/nadella.jpeg",
         talk: "Transformação Digital e Computação em Nuvem",
         details: "O líder da Microsoft discutirá como a nuvem está revolucionando os negócios e a importância da transformação digital nas organizações.",
         saiba:"Saiba mais sobre o Palestrante"
@@ -68,7 +68,7 @@ const speakers = [
     {
         name: "Jensen Huang",
         bio: "CEO da NVIDIA",
-        photo: "https://upload.wikimedia.org/wikipedia/commons/2/21/Jensen_Huang_-_GTC_Keynote_-_March_2018.jpg",
+        photo: "images/jensen.jpeg",
         talk: "O Futuro da Computação Gráfica e IA",
         details: "O visionário por trás das GPUs modernas falará sobre como a computação acelerada está impulsionando a próxima geração de inteligência artificial.",
         saiba:"Saiba mais sobre o Palestrante"
@@ -84,7 +84,7 @@ const speakers = [
     {
         name: "Vint Cerf",
         bio: "Pai da Internet",
-        photo: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Vint_Cerf_%2830091470263%29.jpg",
+        photo: "images/Vint Cerf.jpeg",
         talk: "Os Próximos 50 Anos da Internet",
         details: "Um dos criadores dos protocolos TCP/IP compartilha sua visão para o futuro da conectividade global e desafios de segurança digital.",
         saiba:"Saiba mais sobre o Palestrante"
@@ -92,7 +92,7 @@ const speakers = [
     {
         name: "Fei-Fei Li",
         bio: "Co-Diretora do Stanford Human-Centered AI Institute",
-        photo: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Fei-Fei_Li_2015.jpg",
+        photo: "images/li-fei.jpeg",
         talk: "IA Humanizada: Ética e Aplicações",
         details: "A renomada pesquisadora de IA discute como desenvolver sistemas de inteligência artificial que beneficiem verdadeiramente a humanidade.",
         saiba:"Saiba mais sobre o Palestrante"
@@ -103,14 +103,6 @@ const speakers = [
         photo: "https://upload.wikimedia.org/wikipedia/commons/6/66/Guido_van_Rossum_OSCON_2006.jpg",
         talk: "Python: Passado, Presente e Futuro",
         details: "O criador da linguagem Python compartilha histórias sobre sua criação e como vê a evolução da linguagem mais popular do mundo.",
-        saiba:"Saiba mais sobre o Palestrante"
-    },
-    {
-        name: "Shirin Neshat",
-        bio: "Artista Digital e Ativista",
-        photo: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Shirin_Neshat_2015.jpg",
-        talk: "Arte e Tecnologia: Novas Formas de Expressão",
-        details: "A artista explora como a tecnologia está transformando a criação artística e a expressão cultural na era digital.",
         saiba:"Saiba mais sobre o Palestrante"
     },
     {
