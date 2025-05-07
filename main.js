@@ -1,5 +1,5 @@
 // Animação do Terminal
-const messages = ['print("Hello World")', 'print("Hello GDG")', 'Press any key to start...'];
+const messages = ['print("Hello, World!")', 'print("Hello, GDG!")', 'Press any key to start...'];
 let index = 0;
 const terminalContent = document.getElementById('terminal-content');
 
@@ -38,77 +38,88 @@ const speakers = [
         bio: "Criador do Linux e Git",
         photo: "https://upload.wikimedia.org/wikipedia/commons/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg",
         talk: "O futuro dos sistemas open-source",
-        details: "Pioneiro no desenvolvimento de sistemas open-source, Linus compartilhará sua visão sobre o futuro do desenvolvimento colaborativo e como o Linux continua a evoluir."
+        details: "Pioneiro no desenvolvimento de sistemas open-source, Linus compartilhará sua visão sobre o futuro do desenvolvimento colaborativo e como o Linux continua a evoluir.",
+        saiba:"Saiba mais sobre o Palestrante"
     },
     {
         name: "Tim Berners-Lee",
         bio: "Inventor da World Wide Web",
         photo: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg",
         talk: "Web 3.0 e o futuro da internet",
-        details: "O pai da web discute os próximos passos na evolução da internet, os desafios de privacidade e sua visão para uma web mais descentralizada."
+        details: "O pai da web discute os próximos passos na evolução da internet, os desafios de privacidade e sua visão para uma web mais descentralizada.",
+        saiba:"Saiba mais sobre o Palestrante"
     },
     {
         name: "Sundar Pichai",
         bio: "CEO do Google e Alphabet",
         photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Sundar_pichai.png/640px-Sundar_pichai.png",
         talk: "Inteligência Artificial e o futuro do Google",
-        details: "O líder do Google compartilha como a IA está moldando os produtos do Google e o que esperar nos próximos anos de inovação tecnológica."
+        details: "O líder do Google compartilha como a IA está moldando os produtos do Google e o que esperar nos próximos anos de inovação tecnológica.",
+        saiba:"Saiba mais sobre o Palestrante"
     },
     {
         name: "Satya Nadella",
         bio: "CEO da Microsoft",
         photo: "https://upload.wikimedia.org/wikipedia/commons/7/76/Satya_Nadella.jpg",
         talk: "Transformação Digital e Computação em Nuvem",
-        details: "O líder da Microsoft discutirá como a nuvem está revolucionando os negócios e a importância da transformação digital nas organizações."
+        details: "O líder da Microsoft discutirá como a nuvem está revolucionando os negócios e a importância da transformação digital nas organizações.",
+        saiba:"Saiba mais sobre o Palestrante"
     },
     {
         name: "Jensen Huang",
         bio: "CEO da NVIDIA",
         photo: "https://upload.wikimedia.org/wikipedia/commons/2/21/Jensen_Huang_-_GTC_Keynote_-_March_2018.jpg",
         talk: "O Futuro da Computação Gráfica e IA",
-        details: "O visionário por trás das GPUs modernas falará sobre como a computação acelerada está impulsionando a próxima geração de inteligência artificial."
+        details: "O visionário por trás das GPUs modernas falará sobre como a computação acelerada está impulsionando a próxima geração de inteligência artificial.",
+        saiba:"Saiba mais sobre o Palestrante"
     },
     {
         name: "Grace Hopper",
         bio: "Pioneira da Computação (homenagem póstuma)",
         photo: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg",
         talk: "Mulheres na Computação: Legado e Futuro",
-        details: "Sessão especial sobre o impacto das mulheres na tecnologia, com ênfase no trabalho revolucionário de Hopper no desenvolvimento de compiladores."
+        details: "Sessão especial sobre o impacto das mulheres na tecnologia, com ênfase no trabalho revolucionário de Hopper no desenvolvimento de compiladores.",
+        saiba:"Saiba mais sobre o Palestrante"
     },
     {
         name: "Vint Cerf",
         bio: "Pai da Internet",
         photo: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Vint_Cerf_%2830091470263%29.jpg",
         talk: "Os Próximos 50 Anos da Internet",
-        details: "Um dos criadores dos protocolos TCP/IP compartilha sua visão para o futuro da conectividade global e desafios de segurança digital."
+        details: "Um dos criadores dos protocolos TCP/IP compartilha sua visão para o futuro da conectividade global e desafios de segurança digital.",
+        saiba:"Saiba mais sobre o Palestrante"
     },
     {
         name: "Fei-Fei Li",
         bio: "Co-Diretora do Stanford Human-Centered AI Institute",
         photo: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Fei-Fei_Li_2015.jpg",
         talk: "IA Humanizada: Ética e Aplicações",
-        details: "A renomada pesquisadora de IA discute como desenvolver sistemas de inteligência artificial que beneficiem verdadeiramente a humanidade."
+        details: "A renomada pesquisadora de IA discute como desenvolver sistemas de inteligência artificial que beneficiem verdadeiramente a humanidade.",
+        saiba:"Saiba mais sobre o Palestrante"
     },
     {
         name: "Guido van Rossum",
         bio: "Criador da Linguagem Python",
         photo: "https://upload.wikimedia.org/wikipedia/commons/6/66/Guido_van_Rossum_OSCON_2006.jpg",
         talk: "Python: Passado, Presente e Futuro",
-        details: "O criador da linguagem Python compartilha histórias sobre sua criação e como vê a evolução da linguagem mais popular do mundo."
+        details: "O criador da linguagem Python compartilha histórias sobre sua criação e como vê a evolução da linguagem mais popular do mundo.",
+        saiba:"Saiba mais sobre o Palestrante"
     },
     {
         name: "Shirin Neshat",
         bio: "Artista Digital e Ativista",
         photo: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Shirin_Neshat_2015.jpg",
         talk: "Arte e Tecnologia: Novas Formas de Expressão",
-        details: "A artista explora como a tecnologia está transformando a criação artística e a expressão cultural na era digital."
+        details: "A artista explora como a tecnologia está transformando a criação artística e a expressão cultural na era digital.",
+        saiba:"Saiba mais sobre o Palestrante"
     },
     {
         name: "Elon Musk",
         bio: "CEO da Tesla e SpaceX",
         photo: "https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg",
         talk: "Inovação Radical e Futuro da Humanidade",
-        details: "O empreendedor visionário discute suas perspectivas sobre inteligência artificial, energia sustentável e colonização espacial."
+        details: "O empreendedor visionário discute suas perspectivas sobre inteligência artificial, energia sustentável e colonização espacial.",
+        saiba:"Saiba mais sobre o Palestrante"
     }
     
     
@@ -120,6 +131,7 @@ function createSpeakerCard(speaker) {
         <h3>${speaker.name}</h3>
         <p>${speaker.bio}</p>
         <p><strong>Palestra:</strong> ${speaker.talk}</p>
+        <p><strong>Click Aqui e </strong> ${speaker.saiba}</p>
     `;
     card.addEventListener('click', () => showSpeakerDetails(speaker));
     return card;
