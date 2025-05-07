@@ -158,6 +158,35 @@ nav a:hover {
     width: 200px;
     height: 200px;
 }
+.evento {
+    background: #f9f9f9;
+    border-left: 4px solid #3498db;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 0 4px 4px 0;
+}
+
+.data {
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 5px;
+}
+
+.titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.descricao {
+    color: #7f8c8d;
+}
+
+.local {
+    font-style: italic;
+    margin-top: 5px;
+}
 @media (max-width: 768px) {
     .terminal-text { font-size: 1.5em; }
     nav { flex-direction: column; }
